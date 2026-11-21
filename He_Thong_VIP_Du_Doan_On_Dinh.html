@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://thoxaycau.netlify.app/?zarsrc=31&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -->
+<html lang="vi"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=a6c4f739-ed1d-46ee-8fc0-48cd20299e83
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=overlaps">
+<title>Hệ Thống VIP - Bảo Mật Thần Tài</title>
+<meta name="theme-color" content="#5c0000">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Hệ Thống VIP - Bảo Mật Thần Tài_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="functions.css">
+
+<!-- Tailwind CSS -->
+<script src="./Hệ Thống VIP - Bảo Mật Thần Tài_files/saved_resource"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="41b4f158-b64d-4e3b-9409-307e147e2f3d" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="41b4f158-b64d-4e3b-9409-307e147e2f3d" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/101.js"></script>
+
+<style>
+  /* ================= GLOBAL & TRANSITION STYLES ================= */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; width: 100%; min-height: 100vh; overflow-x: hidden; overscroll-behavior: none; transition: background 0.8s ease-in-out; }
+  body.login-mode { background: radial-gradient(circle at center 30%, #a61b1b, #5c0000, #260000); font-family: 'Montserrat', sans-serif; }
+  body.app-mode { background: linear-gradient(135deg, #11071f, #2d1657); font-family: 'DM Sans', sans-serif; }
+
+  /* ================= GIAO DIỆN BẢO MẬT THẦN TÀI ================= */
+  .glass-panel { background: rgba(92, 0, 0, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 2px solid rgba(255, 215, 0, 0.6); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.1), 0 0 15px rgba(255, 215, 0, 0.2); }
+  .text-gold-gradient { background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+  .gold-input { background: rgba(40, 0, 0, 0.7); border: 2px solid #a67c00; color: #fcf6ba; transition: all 0.3s ease; }
+  .gold-input:focus { border-color: #fcf6ba; box-shadow: 0 0 12px rgba(252, 246, 186, 0.4); outline: none; }
+  .gold-input::placeholder { color: rgba(252, 246, 186, 0.4); }
+  .gold-btn { background: linear-gradient(135deg, #d4af37 0%, #fff2a8 50%, #daa520 100%); color: #4a0000; text-shadow: 0 1px 1px rgba(255,255,255,0.5); box-shadow: 0 6px 15px rgba(218, 165, 32, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.8); transition: all 0.2s ease; border: 1px solid #b8860b; }
+  .gold-btn:active { transform: translateY(2px) scale(0.98); box-shadow: 0 2px 5px rgba(218, 165, 32, 0.4), inset 0 2px 5px rgba(0,0,0,0.2); }
+
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 15%, 45%, 75% { transform: translateX(-8px); } 30%, 60%, 90% { transform: translateX(8px); } }
+  .animate-shake { animation: shake 0.5s ease-in-out; }
+  .fade-out { animation: fadeOut 0.5s forwards; }
+  @keyframes fadeOut { to { opacity: 0; transform: scale(0.95); visibility: hidden; } }
+
+  .falling-coin { position: fixed; top: -60px; z-index: 1; will-change: transform; animation: fallAndSpin linear infinite; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5)); }
+  @keyframes fallAndSpin { 0% { transform: translate3d(0, -60px, 0) rotateY(0deg) rotateZ(0deg); opacity: 0; } 5% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translate3d(20px, 110vh, 0) rotateY(1080deg) rotateZ(360deg); opacity: 0; } }
+
+  /* ================= CSS APP VIP TỪ USER ================= */
+  .wrap { display: flex; flex-direction: column; align-items: center; padding: 40px 20px; width: 100%; position: relative; z-index: 10; color: #e2d9f3; }
+  .image-container { width: 100%; max-width: 600px; text-align: center; margin-bottom: 25px; }
+  .image-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); display: block; }
+  .md5-container { width: 100%; max-width: 600px; background: rgba(30, 16, 54, 0.65); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px; border: 1px solid #3d267a; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; }
+  
+  /* Hộp hiển thị thông tin Key */
+  .key-info-box { background: rgba(255, 51, 102, 0.1); border: 1px solid rgba(255, 51, 102, 0.5); border-radius: 8px; padding: 12px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; font-family: 'Space Grotesk', sans-serif; box-shadow: 0 0 15px rgba(255, 51, 102, 0.1); }
+  .key-label { color: #a69bbd; }
+  .key-value { color: #fff; font-weight: 700; letter-spacing: 1px; }
+  .time-value { color: #00e676; font-weight: 700; font-family: 'JetBrains Mono', 'DM Sans', monospace; }
+
+  /* NÚT CHUYỂN TAB */
+  .tab-container { display: flex; background: #1e1036; padding: 4px; border-radius: 8px; border: 1px solid #3d267a; margin-bottom: 20px; }
+  .tab-btn { flex: 1; padding: 12px; text-align: center; font-weight: bold; font-family: 'Space Grotesk', sans-serif; color: #a69bbd; cursor: pointer; border-radius: 6px; transition: all 0.3s ease; font-size: 1rem; }
+  .tab-btn:hover { color: #fff; }
+  .tab-btn.active-tab { background: linear-gradient(135deg, #ff3366, #cc0033); color: #fff; box-shadow: 0 4px 10px rgba(204, 0, 51, 0.4); text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+
+  .md5-container h2 { text-align: center; margin-top: 0; margin-bottom: 10px; font-family: 'Space Grotesk', sans-serif; color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.5rem; font-weight: 700; }
+  .text-muted { color: #a69bbd; text-align: center; margin-bottom: 20px; font-size: 0.95rem; }
+  .inp { width: 100%; padding: 14px 15px; margin-top: 8px; border-radius: 8px; background: #1e1036; color: #fff; border: 1px solid #3d267a; font-family: 'DM Sans', sans-serif; font-size: 1rem; outline: none; transition: border-color 0.3s ease; }
+  .inp:focus { border-color: #ff3366; }
+  
+  /* Ẩn mũi tên của input type number */
+  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type=number] { -moz-appearance: textfield; }
+
+  .btn { width: 100%; margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; cursor: pointer; font-family: 'Space Grotesk', sans-serif; transition: all 0.2s ease; border: none; background: linear-gradient(135deg, #ff3366, #cc0033); color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.3); box-shadow: 0 5px 15px rgba(204, 0, 51, 0.4); }
+  .btn:active { transform: scale(0.98); }
+  .md5-result { margin-top: 20px; padding: 15px; background: rgba(45, 22, 87, 0.8); border-radius: 8px; text-align: center; font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; display: none; border: 1px solid #3d267a; }
+  .md5-result.active { display: block; animation: fadeIn 0.5s ease; }
+  .res-tai { color: #ff3366; font-size: 1.5rem; font-weight: 700; text-shadow: 0 0 10px rgba(255,51,102,0.5); }
+  .res-xiu { color: #00e676; font-size: 1.5rem; font-weight: 700; text-shadow: 0 0 10px rgba(0,230,118,0.5); }
+  
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+  
+  /* XÍ NGẦU 3D */
+  .dice-wrapper { display: flex; justify-content: center; gap: 30px; margin-top: 30px; perspective: 1000px; display: none; z-index: 50; position: relative; }
+  .throw-wrapper { transform-style: preserve-3d; opacity: 0; }
+  .throw-wrapper.rolling { animation: throwMotion 2s cubic-bezier(0.2, 0.8, 0.3, 1) forwards; }
+  @keyframes throwMotion { 0% { transform: translateY(100px) scale(0.2); opacity: 0; } 15% { transform: translateY(-180px) scale(1.6); opacity: 1; } 85% { transform: translateY(-180px) scale(1.6); opacity: 1; } 100% { transform: translateY(0) scale(1); opacity: 1; } }
+  .dice { width: 60px; height: 60px; position: relative; transform-style: preserve-3d; }
+  .face { position: absolute; width: 60px; height: 60px; background: rgba(220, 10, 10, 0.75); border: 1px solid rgba(255, 100, 100, 0.8); border-radius: 8px; box-shadow: inset 0 0 15px rgba(100, 0, 0, 0.9), 0 0 8px rgba(255, 0, 0, 0.4); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); }
+  .front { transform: translateZ(30px); } .back { transform: rotateY(180deg) translateZ(30px); }
+  .right { transform: rotateY(90deg) translateZ(30px); } .left { transform: rotateY(-90deg) translateZ(30px); }
+  .top { transform: rotateX(90deg) translateZ(30px); } .bottom { transform: rotateX(-90deg) translateZ(30px); }
+  .dot { position: absolute; width: 12px; height: 12px; background: #fff; border-radius: 50%; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5), 0 0 3px rgba(255,255,255,0.9); }
+  .center { top: 50%; left: 50%; transform: translate(-50%, -50%); } .tl { top: 10%; left: 10%; } .tr { top: 10%; right: 10%; } .ml { top: 50%; left: 10%; transform: translateY(-50%); } .mr { top: 50%; right: 10%; transform: translateY(-50%); } .bl { bottom: 10%; left: 10%; } .br { bottom: 10%; right: 10%; }
+</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.left-1\/2{left:50%}.top-10{top:2.5rem}.z-0{z-index:0}.z-10{z-index:10}.z-\[100\]{z-index:100}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-0{margin-top:0px}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.hidden{display:none}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-11\/12{width:91.666667%}.w-full{width:100%}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.gap-1{gap:0.25rem}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border-2{border-width:2px}.border-red-400{--tw-border-opacity:1;border-color:rgb(248 113 113 / var(--tw-border-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[rgba\(252\2c 246\2c 186\2c 0\.7\)\]{color:rgba(252,246,186,0.7)}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-0{opacity:0}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow-xl{--tw-drop-shadow:drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.placeholder\:tracking-normal::placeholder{letter-spacing:0em}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style></head>
+<body class="app-mode relative" __processed_72431c31-10e5-43c6-bbe3-da11ccb9a82c__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjIuMSIsInNjb3JlIjoyMDIwMTB9XQ==">
+
+  <!-- HIỆU ỨNG ĐỒNG XU RƠI -->
+  <div id="coin-container" class="absolute inset-0 overflow-hidden pointer-events-none z-0" bis_skin_checked="1"><div class="falling-coin" bis_skin_checked="1" style="width: 43.5987px; height: 43.5987px; left: 84.5292vw; animation-duration: 8.99115s; animation-delay: -1.08047s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 28.9795px; height: 28.9795px; left: 79.4409vw; animation-duration: 8.09055s; animation-delay: -2.13159s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 30.7561px; height: 30.7561px; left: 77.0223vw; animation-duration: 8.41804s; animation-delay: -2.33398s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 45.6108px; height: 45.6108px; left: 89.8273vw; animation-duration: 8.53376s; animation-delay: -4.70163s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 46.4958px; height: 46.4958px; left: 71.0682vw; animation-duration: 7.56581s; animation-delay: -4.53988s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 39.9149px; height: 39.9149px; left: 59.2405vw; animation-duration: 7.45653s; animation-delay: -0.219124s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 27.1595px; height: 27.1595px; left: 10.1531vw; animation-duration: 7.63951s; animation-delay: -4.97828s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 29.1995px; height: 29.1995px; left: 53.2137vw; animation-duration: 7.50021s; animation-delay: -2.82374s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 33.3886px; height: 33.3886px; left: 58.0497vw; animation-duration: 7.31235s; animation-delay: -3.73156s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 29.9513px; height: 29.9513px; left: 83.9132vw; animation-duration: 6.63204s; animation-delay: -3.29288s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 51.0663px; height: 51.0663px; left: 26.5593vw; animation-duration: 7.76174s; animation-delay: -4.48535s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 29.7705px; height: 29.7705px; left: 11.3069vw; animation-duration: 6.97522s; animation-delay: -4.20085s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 50.5605px; height: 50.5605px; left: 2.71286vw; animation-duration: 4.03378s; animation-delay: -3.02672s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 37.5552px; height: 37.5552px; left: 12.5483vw; animation-duration: 4.67469s; animation-delay: -4.17855s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 34.9013px; height: 34.9013px; left: 86.0273vw; animation-duration: 6.012s; animation-delay: -0.462651s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 53.5709px; height: 53.5709px; left: 26.9423vw; animation-duration: 4.83623s; animation-delay: -2.11713s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 53.6579px; height: 53.6579px; left: 85.1713vw; animation-duration: 6.80493s; animation-delay: -0.728347s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 42.7982px; height: 42.7982px; left: 49.5233vw; animation-duration: 4.08901s; animation-delay: -0.536296s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 33.0483px; height: 33.0483px; left: 91.614vw; animation-duration: 4.25477s; animation-delay: -0.554618s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 39.6349px; height: 39.6349px; left: 41.6922vw; animation-duration: 7.78492s; animation-delay: -4.73382s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 31.985px; height: 31.985px; left: 88.757vw; animation-duration: 6.94585s; animation-delay: -1.94158s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 30.2495px; height: 30.2495px; left: 16.1842vw; animation-duration: 8.95442s; animation-delay: -0.200419s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 47.5825px; height: 47.5825px; left: 83.0795vw; animation-duration: 6.27991s; animation-delay: -0.136404s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 34.2448px; height: 34.2448px; left: 14.6031vw; animation-duration: 7.64663s; animation-delay: -3.2871s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 46.433px; height: 46.433px; left: 72.5946vw; animation-duration: 5.08767s; animation-delay: -3.62326s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 33.1259px; height: 33.1259px; left: 73.9604vw; animation-duration: 6.08972s; animation-delay: -3.42356s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 31.8897px; height: 31.8897px; left: 71.2603vw; animation-duration: 6.65s; animation-delay: -4.43781s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 41.0228px; height: 41.0228px; left: 48.3594vw; animation-duration: 5.2961s; animation-delay: -1.96559s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 54.4368px; height: 54.4368px; left: 45.7529vw; animation-duration: 8.3263s; animation-delay: -2.24024s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div><div class="falling-coin" bis_skin_checked="1" style="width: 33.7147px; height: 33.7147px; left: 3.98968vw; animation-duration: 4.85194s; animation-delay: -1.88644s;">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialgradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"></stop><stop offset="40%" stop-color="#ffd700"></stop><stop offset="80%" stop-color="#d4af37"></stop><stop offset="100%" stop-color="#996515"></stop></radialgradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"></path><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"></rect></g></svg></div></div>
+
+  <!-- THÔNG BÁO LỖI NỔI -->
+  <div id="custom-toast" class="fixed top-10 left-1/2 transform -translate-x-1/2 bg-red-600 border-2 border-red-400 text-white px-6 py-3 rounded-lg shadow-2xl z-[100] font-bold text-center transition-opacity duration-300 opacity-0 pointer-events-none w-11/12 max-w-sm" bis_skin_checked="1">
+    Thông báo hệ thống
+  </div>
+
+  <!-- ==========================================
+       MÀN HÌNH ĐĂNG NHẬP BẢO MẬT
+       ========================================== -->
+  <div id="login-section" class="w-full min-h-screen flex items-center justify-center relative z-10 px-4" bis_skin_checked="1">
+    <div id="lock-screen" class="glass-panel w-full max-w-md rounded-2xl p-8 flex flex-col items-center relative" bis_skin_checked="1">
+      
+      <div class="mb-4" bis_skin_checked="1">
+        <svg viewBox="0 0 100 120" width="90" height="90" class="drop-shadow-xl">
+          <defs>
+            <lineargradient id="goldLockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#bf953f"></stop>
+              <stop offset="30%" stop-color="#fcf6ba"></stop>
+              <stop offset="70%" stop-color="#b38728"></stop>
+              <stop offset="100%" stop-color="#aa771c"></stop>
+            </lineargradient>
+          </defs>
+          <path d="M 30 50 L 30 35 A 20 20 0 0 1 70 35 L 70 50" fill="none" stroke="url(#goldLockGrad)" stroke-width="12" stroke-linecap="round"></path>
+          <rect x="10" y="50" width="80" height="65" rx="12" fill="url(#goldLockGrad)" stroke="#664200" stroke-width="2"></rect>
+          <circle cx="50" cy="82" r="16" fill="#5c0000" stroke="#fcf6ba" stroke-width="2"></circle>
+          <rect x="45" y="77" width="10" height="10" fill="#fcf6ba"></rect>
+        </svg>
+      </div>
+
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gold-gradient mb-2 tracking-wide">SEVER KEY V3</h2>
+      <p class="text-[rgba(252,246,186,0.7)] text-sm mb-6 text-center font-medium">Vui Lòng Nhập Chìa Khoá ( Key ) Để Đăng Nhập Vào Hệ Thống</p>
+      
+      <div class="w-full relative" bis_skin_checked="1">
+        <input type="text" id="password-input" class="gold-input w-full p-4 rounded-xl text-center text-lg font-semibold tracking-widest placeholder:tracking-normal uppercase" placeholder="Vd: VIP-ABCXYZ..." autocomplete="off">
+      </div>
+
+      <div id="error-msg" class="text-red-400 text-sm font-semibold mt-3 hidden h-5" bis_skin_checked="1">Mã chìa khoá không hợp lệ!</div>
+
+      <button class="gold-btn w-full mt-6 py-4 rounded-xl font-extrabold text-lg uppercase tracking-wider" onclick="checkPassword()">
+        MỞ KHOÁ HỆ THỐNG
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HỆ THỐNG ĐA TRANG (MD5 & MÃ PHIÊN)
+       ========================================== -->
+  <div id="app-section" class="wrap" style="display: flex;" bis_skin_checked="1">
+    <div class="image-container" bis_skin_checked="1">
+      <img src="./Hệ Thống VIP - Bảo Mật Thần Tài_files/IMG_2951.png" alt="Banner App">
+    </div>
+
+    <div class="md5-container" bis_skin_checked="1">
+      <div bis_skin_checked="1">
+          <span class="key-label">Lưu Ý:   </span>
+          <span id="display-time-left" class="time-value">Tool Không Thể Dự Đoán Đúng 100%</span>
+        </div>
+      </div>
+
+      <!-- THANH ĐIỀU HƯỚNG TAB -->
+      <div class="tab-container" bis_skin_checked="1">
+        <div id="btn-tab-md5" class="tab-btn active-tab" onclick="switchTab('md5')" bis_skin_checked="1">TÀI XỈU MD5</div>
+        <div id="btn-tab-phien" class="tab-btn" onclick="switchTab('phien')" bis_skin_checked="1">TÀI XỈU</div>
+      </div>
+
+      <h2>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff3366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg> 
+        <span id="main-title">GIẢI MÃ MD5</span>
+      </h2>
+
+      <!-- KHU VỰC NHẬP LIỆU THAY ĐỔI THEO TAB -->
+      <div id="input-md5-area" bis_skin_checked="1">
+        <p class="text-muted">Nhập chuỗi mã hoá (Hash/MD5) để dự đoán.</p>
+        <input class="inp" type="text" id="hash-input" placeholder="Nhập chuỗi mã hoá tại đây..." autocomplete="off">
+      </div>
+
+      <div id="input-phien-area" style="display: none;" bis_skin_checked="1">
+        <p class="text-muted">Nhập mã phiên (ID Phiên) để dự đoán Tài / Xỉu.</p>
+        <input class="inp" type="number" id="phien-input" placeholder="Ví dụ mã phiên: 1234567..." autocomplete="off">
+      </div>
+
+      <button class="btn" onclick="rollAndPredict()" id="actionBtn">GIẢI MÃ VÀ DỰ ĐOÁN</button>
+
+      <!-- KHU VỰC HIỆU ỨNG XÍ NGẦU (Dùng chung) -->
+      <div class="dice-wrapper" id="diceArea" bis_skin_checked="1">
+        <div class="throw-wrapper" id="throw1" bis_skin_checked="1"><div class="dice" id="dice1" bis_skin_checked="1"><div class="face front" bis_skin_checked="1"><div class="dot center" bis_skin_checked="1"></div></div><div class="face back" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot ml" bis_skin_checked="1"></div><div class="dot mr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face right" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face left" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face top" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face bottom" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div></div></div>
+        <div class="throw-wrapper" id="throw2" bis_skin_checked="1"><div class="dice" id="dice2" bis_skin_checked="1"><div class="face front" bis_skin_checked="1"><div class="dot center" bis_skin_checked="1"></div></div><div class="face back" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot ml" bis_skin_checked="1"></div><div class="dot mr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face right" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face left" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face top" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face bottom" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div></div></div>
+        <div class="throw-wrapper" id="throw3" bis_skin_checked="1"><div class="dice" id="dice3" bis_skin_checked="1"><div class="face front" bis_skin_checked="1"><div class="dot center" bis_skin_checked="1"></div></div><div class="face back" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot ml" bis_skin_checked="1"></div><div class="dot mr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face right" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face left" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face top" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot center" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div><div class="face bottom" bis_skin_checked="1"><div class="dot tl" bis_skin_checked="1"></div><div class="dot tr" bis_skin_checked="1"></div><div class="dot bl" bis_skin_checked="1"></div><div class="dot br" bis_skin_checked="1"></div></div></div></div>
+      </div>
+
+      <!-- KHU VỰC KẾT QUẢ TÀI XỈU -->
+      <div id="resultBox" class="md5-result" bis_skin_checked="1">
+        Dự đoán: <span id="txResult"></span><br>
+        <span style="font-size: 0.9rem; color: #a69bbd;">Điểm xí ngầu: <span id="scoreResult" style="color:#fff; font-weight:bold;"></span></span><br>
+        <span style="display:block; margin-top:8px; font-size:0.92rem; color:#d8c9f2;">
+          Tỷ lệ tham chiếu: <strong id="percentResult" style="color:#fff;">TÀI 50% – XỈU 50%</strong>
+        </span>
+        <span style="display:block; margin-top:4px; font-size:0.75rem; color:#a69bbd;">
+          Cùng mã đầu vào sẽ luôn cho cùng kết quả. Tỷ lệ 50/50 là mức tham chiếu lý thuyết, không phải bảo đảm thắng.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ================= TOAST THÔNG BÁO =================
+    function showToast(msg, isError = true) {
+      const toast = document.getElementById('custom-toast');
+      toast.innerText = msg;
+      
+      if(isError) {
+        toast.classList.add('bg-red-600', 'border-red-400');
+        toast.classList.remove('bg-gray-800', 'border-gray-600');
+      } else {
+        toast.classList.add('bg-gray-800', 'border-gray-600');
+        toast.classList.remove('bg-red-600', 'border-red-400');
+      }
+
+      toast.classList.remove('opacity-0');
+      setTimeout(() => { toast.classList.add('opacity-0'); }, 4000);
+    }
+
+    // ================= HIỆU ỨNG ĐỒNG XU =================
+    function createGoldCoins() {
+      const container = document.getElementById('coin-container');
+      const numCoins = 30; 
+      const svgCoinPath = `
+        <svg viewBox="0 0 100 100" class="w-full h-full"><defs><radialGradient id="coinGrad" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff8b0"/><stop offset="40%" stop-color="#ffd700"/><stop offset="80%" stop-color="#d4af37"/><stop offset="100%" stop-color="#996515"/></radialGradient></defs><g filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.4))"><path d="M50,5 A45,45 0 1,0 50,95 A45,45 0 1,0 50,5 Z M38,38 H62 V62 H38 Z" fill="url(#coinGrad)" fill-rule="evenodd" stroke="#8b6508" stroke-width="2"/><rect x="35" y="35" width="30" height="30" fill="none" stroke="#8b6508" stroke-width="1.5"/></g></svg>`;
+      for (let i = 0; i < numCoins; i++) {
+        let coin = document.createElement('div');
+        coin.className = 'falling-coin';
+        coin.innerHTML = svgCoinPath;
+        let size = Math.random() * 30 + 25; 
+        coin.style.width = size + 'px'; coin.style.height = size + 'px';
+        coin.style.left = Math.random() * 95 + 'vw'; 
+        coin.style.animationDuration = (Math.random() * 5 + 4) + 's';
+        coin.style.animationDelay = '-' + (Math.random() * 5) + 's'; 
+        container.appendChild(coin);
+      }
+    }
+
+
+    // ================= TRUY CẬP TRỰC TIẾP (ĐÃ BỎ MÀN HÌNH KEY) =================
+    document.addEventListener("DOMContentLoaded", () => {
+      createGoldCoins();
+      document.getElementById('login-section')?.remove();
+      const app = document.getElementById('app-section');
+      if (app) app.style.display = 'flex';
+      document.body.classList.remove('login-mode');
+      document.body.classList.add('app-mode');
+      document.querySelector('meta[name="theme-color"]')
+        ?.setAttribute('content', '#1a0b2e');
+    });
+
+    // ================= HỆ THỐNG ĐA TRANG (TAB LOGIC) =================
+    let currentMode = 'md5';
+
+    function switchTab(mode) {
+      if(isRolling) return; 
+      currentMode = mode;
+      
+      document.getElementById('btn-tab-md5').classList.toggle('active-tab', mode === 'md5');
+      document.getElementById('btn-tab-phien').classList.toggle('active-tab', mode === 'phien');
+      
+      document.getElementById('input-md5-area').style.display = mode === 'md5' ? 'block' : 'none';
+      document.getElementById('input-phien-area').style.display = mode === 'phien' ? 'block' : 'none';
+      
+      document.getElementById('main-title').innerText = mode === 'md5' ? 'GIẢI MÃ MD5' : 'DỰ ĐOÁN MÃ PHIÊN';
+      document.getElementById('actionBtn').innerText = mode === 'md5' ? 'GIẢI MÃ VÀ DỰ ĐOÁN' : 'DỰ ĐOÁN MÃ PHIÊN';
+      
+      document.getElementById('resultBox').classList.remove('active');
+      document.getElementById('diceArea').style.display = 'none';
+    }
+
+
+    // ================= LOGIC DỰ ĐOÁN & XÍ NGẦU 3D =================
+    let isRolling = false;
+
+    function rollAndPredict() {
+      if(isRolling) return;
+      
+      let inputVal = '';
+      if (currentMode === 'md5') {
+        inputVal = document.getElementById('hash-input').value.trim();
+        if(!inputVal) { showToast("Vui lòng nhập chuỗi Hash/MD5!", true); return; }
+      } else {
+        inputVal = document.getElementById('phien-input').value.trim();
+        if(!inputVal) { showToast("Vui lòng nhập mã phiên hợp lệ!", true); return; }
+      }
+
+      isRolling = true;
+      document.getElementById('actionBtn').innerText = "ĐANG TUNG XÚC XẮC...";
+      document.getElementById('resultBox').classList.remove('active');
+      
+      const diceArea = document.getElementById('diceArea');
+      diceArea.style.display = 'flex'; 
+
+      const throws = [document.getElementById('throw1'), document.getElementById('throw2'), document.getElementById('throw3')];
+      const dices = [document.getElementById('dice1'), document.getElementById('dice2'), document.getElementById('dice3')];
+
+      throws.forEach(t => t.classList.remove('rolling'));
+      dices.forEach(d => { d.style.transition = 'none'; d.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)'; });
+
+      void diceArea.offsetWidth; 
+      throws.forEach(t => t.classList.add('rolling'));
+      dices.forEach(d => { d.style.transition = 'transform 2s cubic-bezier(0.1, 0.8, 0.1, 1)'; });
+
+      // Sinh kết quả ổn định từ mã đầu vào: cùng chế độ + cùng mã => cùng 3 viên xúc xắc.
+      // Đây là ánh xạ xác định để kết quả không đổi, không phải thuật toán giải ngược MD5.
+      function stableSeed(text) {
+        let h = 2166136261;
+        for (let i = 0; i < text.length; i++) {
+          h ^= text.charCodeAt(i);
+          h = Math.imul(h, 16777619);
+        }
+        h ^= h >>> 16;
+        h = Math.imul(h, 0x7feb352d);
+        h ^= h >>> 15;
+        h = Math.imul(h, 0x846ca68b);
+        h ^= h >>> 16;
+        return h >>> 0;
+      }
+
+      let seed = stableSeed(currentMode + "|" + inputVal.trim().toLowerCase());
+      function nextStable() {
+        seed = (seed + 0x6D2B79F5) >>> 0;
+        let t = seed;
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      }
+      const vals = [
+        Math.floor(nextStable() * 6) + 1,
+        Math.floor(nextStable() * 6) + 1,
+        Math.floor(nextStable() * 6) + 1
+      ];
+      const total = vals[0] + vals[1] + vals[2];
+
+      function getRotation(value) {
+        switch(value) {
+          case 1: return { x: 0, y: 0 }; case 6: return { x: 0, y: 180 }; case 2: return { x: 0, y: -90 };
+          case 5: return { x: 0, y: 90 }; case 3: return { x: -90, y: 0 }; case 4: return { x: 90, y: 0 };
+          default: return { x: 0, y: 0 };
+        }
+      }
+
+      dices.forEach((d, index) => {
+        let rot = getRotation(vals[index]);
+        let extraX = index % 2 === 0 ? 2160 : -2160;
+        let extraY = index % 2 === 1 ? -2160 : 2160;
+        d.style.transform = `rotateX(${rot.x + extraX}deg) rotateY(${rot.y + extraY}deg) rotateZ(0deg)`;
+      });
+
+      setTimeout(() => {
+        let txText = total >= 11 ? "TÀI" : "XỈU";
+        let txClass = total >= 11 ? "res-tai" : "res-xiu";
+
+        const txResEl = document.getElementById('txResult');
+        txResEl.innerText = txText; 
+        txResEl.className = txClass;
+        
+        document.getElementById('scoreResult').innerText = `${total} (${vals[0]} - ${vals[1]} - ${vals[2]})`;
+        document.getElementById('percentResult').innerText = "TÀI 50% – XỈU 50%";
+        document.getElementById('resultBox').classList.add('active');
+        
+        document.getElementById('actionBtn').innerText = currentMode === 'md5' ? 'GIẢI MÃ VÀ DỰ ĐOÁN' : 'DỰ ĐOÁN MÃ PHIÊN';
+        isRolling = false;
+      }, 2000);
+    }
+  </script>
+
+
+<script src="Key_merged.js"></script>
+<script async="" src="./Hệ Thống VIP - Bảo Mật Thần Tài_files/hud" data-nf-variant="public" data-netlify-site-id="a6c4f739-ed1d-46ee-8fc0-48cd20299e83" data-app-host="app.netlify.com" data-account-tier="free"></script>
+<iframe id="nl-badge-frame" title="Powered by Netlify" style="position: fixed; bottom: 0px; right: 0px; border: 0px; margin: 0px; padding: 0px; background: transparent; color-scheme: dark; z-index: 2147483645; width: 197px; height: 64px; clip-path: path(&quot;M 3 3 H 184 V 51 H 3 Z&quot;);" data-nl-ready="1" src="./Hệ Thống VIP - Bảo Mật Thần Tài_files/saved_resource.html"></iframe></body></html>
